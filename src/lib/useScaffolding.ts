@@ -19,8 +19,8 @@ const useScaffolding = () => {
   const lastFolderLocationName = location.split("/").slice(-1)[0];
 
   const organizationName = usePrompt(
-    "Organization name [deegital]",
-    "deegital"
+    "Organization name [deegitalbe]",
+    "deegitalbe"
   );
 
   const appKey = usePrompt(
@@ -72,7 +72,7 @@ const useScaffolding = () => {
   generator.copy(useStubsPath(), location);
 
   useSentence("Successfully scaffolded project ✅");
-  useSentence("Happy coding 🍺");
+  useSentence("Happy coding 🤓");
 };
 
 export default useScaffolding;
