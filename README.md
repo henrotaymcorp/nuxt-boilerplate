@@ -1,13 +1,10 @@
 # nuxt-boilerplate
 A boilerplate to scaffold a nuxt 3 project with ease.
 
-## Installation
-```shell
-yarn add @henrotaymcorp/nuxt-boilerplate
-```
-
 ## Usage
-<!-- @TODO -->
+```shell
+ npx @henrotaymcorp/nuxt-boilerplate@latest
+```
 
 ## Development
 ```shell
