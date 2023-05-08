@@ -1,5 +1,6 @@
 // import eslintPlugin from "vite-plugin-eslint";
 import * as dotenv from "dotenv";
+import eslint from "vite-plugin-eslint";
 dotenv.config();
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -14,9 +15,7 @@ export default defineNuxtConfig({
     shim: false,
     strict: true,
   },
-  css: [
-    "~/assets/css/main.css",
-  ],
+  css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -24,7 +23,7 @@ export default defineNuxtConfig({
     },
   },
   vite: {
-    plugins: [],
+    plugins: [eslint()],
     server: {
       hmr: {
         port: parseInt(process.env.WEBSOCKET_PORT || "{{{{appPort}}}}"),

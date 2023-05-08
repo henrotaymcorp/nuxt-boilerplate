@@ -4,6 +4,12 @@
     "@nuxtjs/eslint-config-typescript",
     "prettier"
   ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaFeatures" : {
+      "jsx" : false
+    }
+  },
   "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
     "prettier/prettier": "error",
