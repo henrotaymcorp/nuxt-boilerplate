@@ -1,0 +1,14 @@
+version: '3.4'
+name: {{{{appKey}}}}
+services:
+  app:
+    container_name: {{{{appKey}}}}-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    ports:
+      - ${APP_PORT:-3000}:{{{{appPort}}}}
+      - ${WEBSOCKET_PORT:-24678}:{{{{websocketPort}}}}
+    volumes:
+      - ./:/app
