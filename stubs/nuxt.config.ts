@@ -1,4 +1,3 @@
-// import eslintPlugin from "vite-plugin-eslint";
 import * as dotenv from "dotenv";
 import eslint from "vite-plugin-eslint";
 dotenv.config();
@@ -7,7 +6,7 @@ dotenv.config();
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      trustupIoAppKey: ""
+      trustupIoAppKey: "",
     },
   },
   ssr: false,

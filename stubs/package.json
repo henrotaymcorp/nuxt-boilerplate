@@ -10,8 +10,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "vue-tsc --noEmit && eslint . --fix",
-    "format": "prettier --write \"src/**/*\"",
-    "validate": "yarn lint && yarn format"
+    "format": "prettier --write .",
+    "validate": "yarn lint && yarn format",
+    "release": "yarn validate && changeset publish"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@types/node": "^18.16.0",
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.32.0",
+    "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "nuxt": "^3.0.0",
