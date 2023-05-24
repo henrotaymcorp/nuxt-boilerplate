@@ -1,5 +1,11 @@
 # @henrotaymcorp/nuxt-boilerplate
 
+## 0.1.1
+
+### Patch Changes
+
+- 0f005e9: Messed up npm token
+
 ## 0.1.0
 
 ### Minor Changes
