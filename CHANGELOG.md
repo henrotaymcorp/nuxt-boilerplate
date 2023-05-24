@@ -1,5 +1,11 @@
 # @henrotaymcorp/nuxt-boilerplate
 
+## 0.1.2
+
+### Patch Changes
+
+- a5ce18c: Updating typescript config.
+
 ## 0.1.1
 
 ### Patch Changes
