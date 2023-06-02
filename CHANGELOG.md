@@ -1,5 +1,12 @@
 # @henrotaymcorp/nuxt-boilerplate
 
+## 0.1.3
+
+### Patch Changes
+
+- df4d31d: No need for .env.docker
+- d24b88c: Wrong exposed port for websocket/app.
+
 ## 0.1.2
 
 ### Patch Changes
