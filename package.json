@@ -1,6 +1,6 @@
 {
   "name": "@henrotaymcorp/nuxt-boilerplate",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A boilerplate to scaffold a nuxt 3 project with ease.",
   "files": [
     "dist",

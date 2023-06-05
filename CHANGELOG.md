@@ -1,5 +1,15 @@
 # @henrotaymcorp/nuxt-boilerplate
 
+## 0.2.0
+
+### Minor Changes
+
+- 4c78cf8: Adding https and docker-integration compatibility
+
+### Patch Changes
+
+- 37e98c5: Bootstrap should init git repository.
+
 ## 0.1.3
 
 ### Patch Changes
