@@ -12,3 +12,12 @@ services:
       - ${WEBSOCKET_PORT:-24678}:${WEBSOCKET_PORT:-24678}
     volumes:
       - ./:/app
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.{{{{appKey}}}}.tls=true
+      - traefik.http.routers.{{{{appKey}}}}.rule=Host("{{{{appKey}}}}.docker.localhost")
+    networks:
+      - applications
+networks:
+  applications:
+    external: true
