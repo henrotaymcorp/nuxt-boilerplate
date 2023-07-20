@@ -2,10 +2,10 @@
 
 true > .env && \
 doppler secrets download \
-  --project "trustup-io-nuxt-app-commons" \
+  --project "trustup-io-app-commons" \
   --config local \
   --no-file \
-  --format env | grep -v '^DOPPLER_' \
+  --format env | grep 'NUXT_' \
   >> .env
 doppler secrets download \
   --project "{{{{appKey}}}}" \

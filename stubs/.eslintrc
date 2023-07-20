@@ -2,17 +2,10 @@
   "root": true,
   "extends": [
     "@nuxtjs/eslint-config-typescript",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
-  "parserOptions": {
-    "parser": "@typescript-eslint/parser",
-    "ecmaFeatures" : {
-      "jsx" : false
-    }
-  },
-  "plugins": ["prettier", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "prettier/prettier": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
     "vue/multi-word-component-names": "off"

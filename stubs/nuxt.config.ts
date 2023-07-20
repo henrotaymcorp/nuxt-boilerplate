@@ -25,11 +25,12 @@ export default defineNuxtConfig({
     plugins: [eslint()],
     server: {
       hmr: {
-        port: parseInt(process.env.WEBSOCKET_PORT || "{{{{appPort}}}}"),
+        port: parseInt(process.env.WEBSOCKET_PORT || "3000"),
       },
     },
   },
   devServer: {
-    port: parseInt(process.env.APP_PORT || "{{{{websocketPort}}}}"),
+    port: parseInt(process.env.APP_PORT || "5173"),
   },
+  devtools: { enabled: process.env.APP_ENV !== "production" },
 });

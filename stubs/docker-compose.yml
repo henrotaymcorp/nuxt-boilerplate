@@ -7,15 +7,17 @@ services:
       context: .
       dockerfile: Dockerfile
       target: runner
+    image: {{{{appKey}}}}-app-local
     ports:
       - ${APP_PORT:-3000}:${APP_PORT:-3000}
       - ${WEBSOCKET_PORT:-24678}:${WEBSOCKET_PORT:-24678}
     volumes:
-      - ./:/app
+      - ./:/${PWD}
     labels:
       - traefik.enable=true
       - traefik.http.routers.{{{{appKey}}}}.tls=true
       - traefik.http.routers.{{{{appKey}}}}.rule=Host("{{{{appKey}}}}.docker.localhost")
+      - traefik.http.services.{{{{appKey}}}}.loadbalancer.server.port=${APP_PORT:-3000}
     networks:
       - applications
 networks:

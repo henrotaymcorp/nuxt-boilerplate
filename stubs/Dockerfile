@@ -1,9 +1,11 @@
 # DEPENDENCIES
-FROM node:16-alpine as deps
+FROM node:18-alpine as deps
+
+ARG FOLDER
 
 USER node
 
-WORKDIR /app
+WORKDIR ${FOLDER}
 
 COPY --chown=node:node package.json yarn.lock ./
 
@@ -14,9 +16,11 @@ FROM deps as builder
 
 USER node
 
-WORKDIR /app
+ARG FOLDER
 
-COPY --chown=node:node --from=deps /app/node_modules ./node_modules
+WORKDIR ${FOLDER}
+
+COPY --chown=node:node --from=deps ${FOLDER}/node_modules ./node_modules
 
 COPY --chown=node:node . .
 
@@ -25,8 +29,10 @@ FROM builder as runner
 
 USER node
 
-WORKDIR /app
+ARG FOLDER
 
-COPY --chown=node:node --from=builder /app ./
+WORKDIR ${FOLDER}
+
+COPY --chown=node:node --from=builder ${FOLDER} ./
 
 CMD yarn dev

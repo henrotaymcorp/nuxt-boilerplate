@@ -43,18 +43,12 @@ const useScaffolding = () => {
     "mathieu.henrotay@gmail.com"
   );
 
-  const appPort = usePrompt(`App docker port [3000]`, "3000");
-
-  const websocketPort = usePrompt(`App websocket port [24678]`, "24678");
-
   const data = {
     organizationName,
     appKey,
     description,
     authorName,
     authorEmail,
-    appPort,
-    websocketPort,
   };
 
   useDisplayJson({ location, ...data });
@@ -72,6 +66,13 @@ const useScaffolding = () => {
   generator.copy(useStubsPath(), location);
 
   useSentence("Successfully scaffolded project ✅");
+  useSentence("Next steps :");
+  useSentence(
+    `1. cd ${location} && npx @henrotaymcorp/nuxt-cloudflare-page-deployment@latest`
+  );
+  useSentence("2. Push your repository to git");
+  useSentence("3. Wait for github action completion");
+  useSentence("4. Bootstrap your project using docker-integration");
   useSentence("Happy coding 🤓");
 };
 
