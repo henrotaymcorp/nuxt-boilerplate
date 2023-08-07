@@ -1,5 +1,15 @@
 # @henrotaymcorp/nuxt-boilerplate
 
+## 0.3.0
+
+### Minor Changes
+
+- bc21884: Updating to last nuxt version (absolute path) & installing nuxt devtools
+
+### Patch Changes
+
+- c4f0424: Messed up script import
+
 ## 0.2.0
 
 ### Minor Changes
