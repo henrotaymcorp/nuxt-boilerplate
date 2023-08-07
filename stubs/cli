@@ -24,4 +24,4 @@ if [ "$1" == "restart" ]
         exit
 fi
 
-.scripts/app.sh $*
+./scripts/app.sh $*
