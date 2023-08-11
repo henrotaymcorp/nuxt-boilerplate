@@ -6,7 +6,8 @@ dotenv.config();
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      trustupIoAppKey: "",
+      appName: "",
+      trustupAppKey: ""
     },
   },
   ssr: false,
