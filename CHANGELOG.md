@@ -1,5 +1,12 @@
 # @henrotaymcorp/nuxt-boilerplate
 
+## 0.3.1
+
+### Patch Changes
+
+- 7ab567b: Correct default env values.
+- 1d169ac: Using detached mode to start project (allowing docker-integration to start several projects at once)
+
 ## 0.3.0
 
 ### Minor Changes
