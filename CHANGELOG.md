@@ -1,5 +1,11 @@
 # @henrotaymcorp/nuxt-boilerplate
 
+## 0.3.2
+
+### Patch Changes
+
+- 7ef67a6: Configuring devtools correctly
+
 ## 0.3.1
 
 ### Patch Changes
