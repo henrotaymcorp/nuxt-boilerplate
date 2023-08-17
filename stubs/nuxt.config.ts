@@ -7,9 +7,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appName: "",
-      trustupAppKey: ""
+      trustupAppKey: "",
     },
   },
+  modules: [
+    "@nuxt/devtools",
+  ],
   ssr: false,
   typescript: {
     shim: false,

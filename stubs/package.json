@@ -26,7 +26,7 @@
   "homepage": "https://github.com/{{{{organizationName}}}}/{{{{appKey}}}}#readme",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@nuxt/devtools": "^0.6.7",
+    "@nuxt/devtools": "^0.8.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@types/node": "^20.4.2",
     "autoprefixer": "^10.4.14",
